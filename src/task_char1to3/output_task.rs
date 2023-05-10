@@ -152,3 +152,24 @@ pub fn output_line_number_4(){
     let fr_num: i32 = four_num.trim().parse().unwrap();
     println!("Вы ввели следующие числа: {} {} {} {}", fs_num, sd_num, th_num, fr_num);
 }
+
+pub fn output_choice(){
+    let mut x_str = String::new();
+    let mut y_str = String::new();
+    let mut t_str = String::new();
+    let mut v_str = String::new();
+    println!("Введите число x:");
+    std::io::stdin().read_line(&mut x_str).ok().expect("Ошибка ввода");
+    println!("Введите число y");
+    std::io::stdin().read_line(&mut y_str).ok().expect("Ошибка ввода");
+    println!("Введите число t");
+    std::io::stdin().read_line(&mut t_str).ok().expect("Ошибка ввода");
+    println!("Введите число v");
+    std::io::stdin().read_line(&mut v_str).ok().expect("Ошибка ввода");
+    let x: i32 = x_str.trim().parse().unwrap();
+    let y: i32 = y_str.trim().parse().unwrap();
+    let t: i32 = t_str.trim().parse().unwrap();
+    let v: i32 = v_str.trim().parse().unwrap();
+    println!("a) 5 10      б) 100 {}     в) {} 25", t, x);
+    println!("   7 см         1949 {}       {} {}", v, x, y);
+}

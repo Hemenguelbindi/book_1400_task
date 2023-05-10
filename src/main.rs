@@ -67,6 +67,14 @@ fn task_output() {
             msg_point_task(1.14);
             output_task::output_line_number_3();
         }
+        15 => {
+            msg_point_task(1.15);
+            output_task::output_line_number_4();
+        }
+        16 => {
+            msg_point_task(1.16);
+            output_task::output_choice();
+        }
         _ => println!("Не понятный ввод"),
     }
 }
